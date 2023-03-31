@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1> <span>K</span>even.</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="toggleMenu(false)"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="toggleMenu(true)" ></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi I'm <span>Kevun</span> <br> Jen From <br> Australia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------About------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abort-col-1"><img src="/images/bohemian-man-thinking.jpg" alt=""></div>
+                <div class="abort-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut id voluptates eos velit sequi, ab
+                        quas rerum molestias magni. Omnis eligendi asperiores hic! Consequatur aperiam laudantium quae
+                        reiciendis corporis dolor fugiat sed, quas sit, ratione consectetur debitis magni placeat
+                        voluptates.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="activeTabe('skills')">Skills</p>
+                        <p class="tab-links" onclick="activeTabe('experience')">Experience</p>
+                        <p class="tab-links" onclick="activeTabe('education')">Education</p>
+                    </div>
+                    <div class="tav-contents active-tibe" id="skills" onclick="activeTabe('experience')">
+                        <ul>
+                            <li><span>UI?UX</span> <br>Desiging We/App interfaces</li>
+                            <li><span>Web devlopment</span> <br>Desiging We App development</li>
+                            <li><span>App development</span> <br>Desiging We app Androii/ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tav-contents" id="experience" onclick="activeTabe('experience')">
+                        <ul>
+                            <li><span>2023 - Current</span> <br>Desiging We/App interfaces</li>
+                            <li><span>2021 -2023</span> <br>Desiging We App development</li>
+                            <li><span>2019 - 2021</span> <br>Desiging We app Androii/ios app</li>
+                            <li><span>2017 - 2019</span> <br>Desiging We app Androii/ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tav-contents" id="education" onclick="activeTabe('experience')">
+                        <ul>
+                            <li><span>2018</span> <br>Desiging We/App interfaces</li>
+                            <li><span>2019</span> <br>Desiging We App development</li>
+                            <li><span>2020</span> <br>Desiging We app Androii/ios app</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------serivces------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error neque cum reiciendis
+                        libero minus placeat! Quae vitae soluta ipsam.</p>
+                    <a href="#">Loren More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error neque cum reiciendis
+                        libero minus placeat! Quae vitae soluta ipsam.</p>
+                    <a href="#">Loren More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error neque cum reiciendis
+                        libero minus placeat! Quae vitae soluta ipsam.</p>
+                    <a href="#">Loren More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------portfolio----- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work'</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="">
+                    <div class="layer">
+                        <h3>Socila Madia App</h3>
+                        <p>Lorem, ipsum dolor sit amet <br>
+                            quidem maiores?
+                            voluptatum provident <br> reprehenderit obcaecati?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem, ipsum dolor sit amet <br>
+                            quidem maiores?
+                            voluptatum provident <br> reprehenderit obcaecati?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem, ipsum dolor sit amet <br>
+                            quidem maiores?
+                            voluptatum provident <br> reprehenderit obcaecati?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------contact------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="cintact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"> </i>Contact@example.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> </i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/back-img.png" Download class="btn btn2">Download Cv</a>
+                </div>
+
+                <div class="cintact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="text" name="email" placeholder="your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Lorem ipsum dolor sit amet <i class="fa-solid fa-heart"></i> elit. Molestias, dolorem?</p>
+        </div>
+    </div>
+
+
+
+    <script>
+ 
+
+        function activeTabe(id){
+            let tabeArr = ['skills', 'experience', 'education']
+            tabeArr.map((item)=>{
+                if(id===item){
+                    document.getElementById(id).classList = "tav-contents active-tibe"
+                }else{
+                    document.getElementById(item).classList = "tav-contents"
+                }
+            })
+        }
+
+        let sidemenu =document.getElementById('sidemenu');
+        function toggleMenu(open){
+            sidemenu.style.display =open?'block':'none';
+            
+            // if(open){
+            //     sidemenu.style.display ='block';
+            // }else{
+            //     sidemenu.style.display ='none';
+            // }
+        }
+    </script>
+</body>
+
+</html>
